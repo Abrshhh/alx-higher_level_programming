@@ -2,5 +2,4 @@
 str = "Holberton School"
 x = 3 * str
 print(x)
-y = str[:9]
-print(y)
+print(f"{str[0:9]}")
