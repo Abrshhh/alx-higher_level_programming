@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 number = 3.14159
-f"Format:{number}
+print(f"Format:{number:.2f}\n")
