@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-from add_0 import add
+if __name__ == "__main__":
+    import add_0
 
 
-def main():
+def add(a, b):
     a = 1
     b = 2
-    sum = add(a, b)
+    sum = a + b
     print(f"{a} + {b} = {sum}")
 
 
-if __name = "__main__":
-    main()
+add(1, 2)
