@@ -9,3 +9,6 @@ def element_at(my_list, idx):
         return (None)
     else:
         return my_list(idx)
+
+    for item in my_list
+    print("element at {:d} is {}".format(idx, my_list))
