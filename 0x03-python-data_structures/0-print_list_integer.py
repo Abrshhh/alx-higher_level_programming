@@ -10,4 +10,4 @@ def print_list_integer(my_list=[]):
             list_entered.append(lists)
 
     for printed_lists in list_entered:
-        print("{}".format(int(lists)))
+        print("{}".format(printed_lists))
