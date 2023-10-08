@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-#idx = my_list.index()
 my_list = []
 idx = my_list.index()
-#element = my_list[idx]
 
 
 def replace_in_list(my_list, idx, element):
@@ -11,4 +9,3 @@ def replace_in_list(my_list, idx, element):
     elif idx >= len(my_list):
         my_list[idx] = my_list
         return my_list
-    
