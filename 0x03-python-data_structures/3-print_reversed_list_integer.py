@@ -9,3 +9,5 @@ def print_reversed_list_integer(my_list=[]):
     for item in my_list:
         if type(my_list) is list:
             print("{:d}".format(item))
+        else:
+            pass
