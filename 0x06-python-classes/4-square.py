@@ -9,9 +9,11 @@ class Square:
     def __init__(self, size=0):
         """ """
         self.__size = size
+    @property 
     def get_size(self):
         """ """
         return (self.__size)
+    @size.setter
     def set_size(self, value):
         """ """
         if not isinstance(value, int):
