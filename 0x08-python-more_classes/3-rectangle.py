@@ -53,9 +53,9 @@ class Rectangle:
         else:
             return (2 * (self.__height + self.__width))
 
-    def Rectangle(self, width, height):
-        for i in range(height):
-            if height == 0 or width == 0:
+    def __str__(self):
+        for i in range(self.__height):
+            if self.__height == 0 or self.__width == 0:
                 return ("")
             else:
-                print(width * "#")
+                print(self.__width * "#")
