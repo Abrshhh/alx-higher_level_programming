@@ -9,12 +9,13 @@ class Rectangle:
         '''This function Initializes the class Rectangle.
 
         Args:
-            width: Represents the width of the Rectangle.
-            height: Represents the height of the Rectangle.
+            width(int): Represents the width of the Rectangle.
+            height(int): Represents the height of the Rectangle.
         '''
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
+    @width.setter
     def width(self, value):
         '''Set the value of width of the Rectangle.'''
 
@@ -25,11 +26,13 @@ class Rectangle:
         else:
             self.__width = value
 
+    @property
     def width(self):
         '''Returns: The width of the Rectangle.'''
 
         return self.__width
 
+    @height.setter
     def height(self, value):
         '''Set the value of height of the Rectangle.'''
 
@@ -40,6 +43,7 @@ class Rectangle:
         else:
             self.__height = value
 
+    @property
     def height(self):
         '''Returns: The height of the Rectangle.'''
 
