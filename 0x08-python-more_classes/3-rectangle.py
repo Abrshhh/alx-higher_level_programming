@@ -15,12 +15,6 @@ class Rectangle:
         self.width = width
         self.height = height
 
-        for i in range(self.__height):
-            if height == 0 or width == 0:
-                return ("")
-            else:
-                print(width * "#")
-
     @property
     def width(self):
         """Get/set the width of the rectangle."""
@@ -59,3 +53,9 @@ class Rectangle:
         else:
             return (2 * (self.__height + self.__width))
 
+    def Rectangle(self, width, height):
+        for i in range(height):
+            if height == 0 or width == 0:
+                return ("")
+            else:
+                print(width * "#")
