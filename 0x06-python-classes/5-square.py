@@ -34,7 +34,7 @@ class Square:
     def my_print(self):
         '''Prints the area of the Square with string '#' '''
         if self.__size == 0:
-            print "\n"
+            print ("\n")
         else:
             for i in range(self.__size):
                 print (self.__size * "#")
