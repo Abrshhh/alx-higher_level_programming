@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Define a function returning attribute and method.'''
 
+
 def lookup(obj):
     ''' Returns list of attribute and methods of obj.
 
