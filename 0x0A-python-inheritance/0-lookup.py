@@ -7,5 +7,5 @@ def lookup(obj):
     Args:
         obj: any object
     '''
-
-    return obj.__dir__()
+    my_list = list(obj.__dir__())
+    return my_list
