@@ -13,7 +13,6 @@ def is_kind_of_class(obj, a_class):
     Returns:
         True or False if the object fullfuill the requirement or not
     '''
-
     if isinstance(obj, a_class):
         return True
     else:
