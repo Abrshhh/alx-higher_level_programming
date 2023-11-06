@@ -3,11 +3,11 @@
 
 
 def inherits_from(obj, a_class):
-    '''This function specifies if an object is an instance of a class
+    '''This function specifies if an object is an instance of a class.
 
     Args:
-        obj: any object
-        a_class: the specified class
+        obj (any): any object.
+        a_class (type): the specified class.
     Returns:
         True: if the object is an instance of the class inherited (directly or indirectly) from the specified class or
         False: if not
