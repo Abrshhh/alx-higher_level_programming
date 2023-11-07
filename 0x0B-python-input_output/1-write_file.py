@@ -1,4 +1,4 @@
-#!/usr/bin/pthon3
+#!/usr/bin/python3
 '''Define a function writing a string to a text file.'''
 
 
