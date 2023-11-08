@@ -19,5 +19,4 @@ class Student:
 
     def to_json(self):
         '''Retrieves a dictionary representation of a Student instance.'''
-        x = getattr(Student)
-        return x.__dict__
+        return self.__dict__
