@@ -3,13 +3,13 @@
 
 
 import json
-def to_json_string(my_obj):
-    ''' Gives python representation of a JSON object.
+def from_json_string(my_str):
+    ''' Gives python representation of a JSON string.
 
     Args:
-        my_obj (str): the object to be converted to python type.
+        my_obj (str): the string to be converted to python object type
 
-    Returns: python representation.
+    Returns: python representation
     '''
 
     return json.loads(my_obj)
