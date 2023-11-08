@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''Define a JSON representing function.'''
-
-
 import json
+
+
 def from_json_string(my_str):
     ''' Gives python representation of a JSON string.
 
