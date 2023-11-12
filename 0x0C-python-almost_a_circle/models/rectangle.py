@@ -103,3 +103,12 @@ class Rectangle(Base):
 
         for i in range(self.__height):
             print(self.__width * "#")
+
+    def __Str__(self):
+        val = f"[Rectangle] ({self.id} {self.get_x()} / {self.get_y()} - {self.get_width()}/{self.get_height()})"
+        return val
+
+    def to_dictionary(self):
+        '''Return dictionary of the attributes.'''
+
+        return dict(id = self.id, width = self.get_width, height = self.get_height, x = self.get_x, y = self.get_y)
