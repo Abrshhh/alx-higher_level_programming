@@ -1,14 +1,20 @@
 #!/usr/bin/python3
-'''Define a class called Square that inherits from the class Rectangle.'''
+"""Defines a square class."""
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    '''Represents a Square.'''
+    """Represent a square."""
 
     def __init__(self, size, x=0, y=0, id=None):
-        '''Initializes the class Square.'''
+        """Initialize a new Square.
 
+        Args:
+            size (int): The size of the new Square.
+            x (int): The x coordinate of the new Square.
+            y (int): The y coordinate of the new Square.
+            id (int): The identity of the new Square.
+        """
         super().__init__(size, size, x, y, id)
 
     @property
@@ -63,11 +69,15 @@ class Square(Rectangle):
                     self.y = v
 
     def to_dictionary(self):
-        '''Return a dictionary from attributes of the class Square.'''
+        """Return the dictionary representation of the Square."""
+        return {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
 
-        return dict(id = self.id, size = self.size, x = self.get_x, y = self.get_y)
-
-     def __str__(self):
+    def __str__(self):
         """Return the print() and str() representation of a Square."""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
