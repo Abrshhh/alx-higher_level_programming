@@ -1,17 +1,28 @@
 #!/usr/bin/python3
-'''Define a class called Base.'''
+
+"""Defines a base model class."""
 import json
 import csv
 import turtle
 
 
 class Base:
-    '''Represents a Base class.'''
+    """Base model.
+
+    This Represents the "base" for all other classes in project 0x0C*.
+
+    Private Class Attributes:
+        __nb_object (int): Number of instantiated Bases.
+    """
 
     __nb_objects = 0
-    def __init__(self, id=None):
-        '''Initialize the class Base.'''
 
+    def __init__(self, id=None):
+        """Initialize a new Base.
+
+        Args:
+            id (int): The identity of the new Base.
+        """
         if id is not None:
             self.id = id
         else:
@@ -20,30 +31,22 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        '''Gives JSON string representation of list_dictionaries.
+        """Return the JSON serialization of a list of dicts.
 
         Args:
-            list_dictionaries (list): The list of dictionaries converted to JSON string.
-        Returns:
-            the string "[]" : if list_dictionaries is None or empty.
-            JSON string (str): if list_dictionaries is not empty or None.
-        '''
-
-    if len(list_dictionaries) == 0 or list_dictionaries = None:
-        return ("[]")
-    else:
+            list_dictionaries (list): A list of dictionaries.
+        """
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
         return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
-        '''Writes JSON string representation.
+        """Write the JSON serialization of a list of objects to a file.
 
         Args:
-            list_objs (any): list of instances who inherits of Base Rectangle or Square
-            cls (class): Rectangle or Square class.
-
-        Returns: empty list if list_objs is none or written JSON string representation of list_objs to a file.'''
-
+            list_objs (list): A list of inherited Base instances.
+        """
         filename = cls.__name__ + ".json"
         with open(filename, "w") as jsonfile:
             if list_objs is None:
