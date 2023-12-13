@@ -4,4 +4,4 @@
 -- You can use only one SELECT statement
 SELECT cities.id, cities.name, states.name
 FROM cities, states
-ORDER BY cities.id ASC
+ORDER BY cities.id ASC;
